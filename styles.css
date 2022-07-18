@@ -1,3 +1,47 @@
-h1 {
-  color: #f00;
+#mobile {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+}
+
+#mobile-header {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  background: #fff;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  left: 0;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-logo-placeholder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  margin-left: 24px;
+}
+
+.mobile-button-placeholder {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  margin-right: 36px;
+}
+
+#mobile-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 24px;
+  gap: 12px;
 }
