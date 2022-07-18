@@ -1,3 +1,166 @@
-h1 {
-  color: #f00;
+#mobile {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+}
+
+#mobile-header {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  background: #fff;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  left: 0;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-logo-placeholder {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  margin-left: 24px;
+}
+
+.mobile-button-placeholder {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 8px;
+  margin-right: 36px;
+}
+
+#mobile-bg {
+  display: flex;
+  flex-direction: column;
+  left: 0;
+  top: 0;
+  background-image: url("img/header-shapes mobile@2x.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+#mobile-headline {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 24px;
+  gap: 12px;
+}
+
+#mobile-headline h1 {
+  /* Header / 2 */
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+
+  /* or 130% */
+
+  display: flex;
+  align-items: center;
+
+  /* Neutrals/N800 */
+
+  color: #172b4d;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+#mobile-headline p {
+  /* Body / 2 */
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* or 150% */
+
+  /* Neutrals/N600 */
+
+  color: #344563;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.mobile-headline-supporting-text {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 16px;
+  height: 24px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.mobile-headline-supporting-text h2 {
+  margin: 0;
+
+  /* LET’S CONNECT */
+
+  height: 24px;
+
+  /* Body / 2 - Bolder */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+
+  /* identical to box height, or 150% */
+
+  /* Primary/B300 */
+
+  color: #7f8cff;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.mobile-social-media-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  justify-content: space-between;
+  margin: 0;
+  width: 170.17px;
+  height: 20px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
 }
