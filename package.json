@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/d4nQw3rty/Danys-Portfolio/issues"
   },
-  "homepage": "https://github.com/d4nQw3rty/Danys-Portfolio#readme"
+  "homepage": "https://github.com/d4nQw3rty/Danys-Portfolio#readme",
+  "devDependencies": {
+    "hint": "^7.1.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0"
+  }
 }
