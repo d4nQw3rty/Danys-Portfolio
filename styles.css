@@ -59,7 +59,7 @@ nav {
   gap: 12px;
 }
 
-#mobile-headline h1 {
+.primary-text-title {
   /* Header / 2 */
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -84,7 +84,7 @@ nav {
   flex-grow: 0;
 }
 
-#mobile-headline p {
+.primary-text-paragraph {
   /* Body / 2 */
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -202,7 +202,9 @@ nav {
   flex-grow: 0;
 }
 
-.snapshoot {
+.Snapshoot {
+  display: flex;
+  flex-direction: column;  
   border-radius: 8px;
 
   /* Inside auto layout */
@@ -540,6 +542,185 @@ nav {
 
 .action button:focus {
   /* Button / Pressed */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+
+  /* Theme 1 / Button Normal */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+
+  /* identical to box height, or 141% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  /* Theme 1 / Neutrals 11 */
+
+  color: #fff;
+
+  /* Theme 1 / Primary Colors 1 */
+
+  background: #2230d2;
+  border-radius: 8px;
+}
+
+#about-my-self {
+  /* About My Self */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 114px 24px;
+  gap: 24px;
+  background-color: #fff;
+  border-top-right-radius: 100px;
+}
+
+.top {
+  /* TOP */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 12px;
+}
+
+.about-my-self-social-media {
+  /* Social Media */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 16px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.about-my-self-social-media-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+  margin: 0;
+  gap: 20px;
+  height: 20px;
+  padding: 10px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 3;
+}
+
+button {
+  /* Button / Enable */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+
+  /* Theme 1 / Button Normal */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+
+  /* identical to box height, or 141% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  /* Theme 1 / Primary Colors 2 */
+
+  color: #6070ff;
+
+  /* Theme 1 / Neutrals 11 */
+
+  background: #fff;
+
+  /* Theme 1 / Primary Colors 3 */
+
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 3;
+  
+}
+
+button:hover {
+    /* Button / Hover */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+
+  /* Theme 1 / Primary Colors 2 */
+
+  background: #6070ff;
+
+  /* Theme 1 / Button Normal */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+
+  /* identical to box height, or 141% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  /* Theme 1 / Neutrals 11 */
+
+  color: #fff;
+
+  /* Button/1 */
+
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  border-radius: 8px;
+}
+
+button:focus {
+    /* Button / Pressed */
 
   /* Auto layout */
 
