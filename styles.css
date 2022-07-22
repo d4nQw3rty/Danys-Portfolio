@@ -486,6 +486,12 @@ nav {
   align-items: flex-start;
   padding: 0;
   gap: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .about-my-self-social-media {
@@ -639,4 +645,98 @@ button:focus {
 
   background: #2230d2;
   border-radius: 8px;
+}
+
+.skills {
+  /* Skill List */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  width: -webkit-fill-available;
+  padding: 0 0 0 12px;
+  margin: 0;
+  gap: 12px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.skills ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.language {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 26px 0 0;
+
+  /* Body / 1 - Bolder */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  /* identical to box height, or 120% */
+
+  color: #000;
+}
+
+.language-list {
+  /* Langguage List */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  gap: 12px;
+
+  /* Neutrals/N10 */
+
+  background: #f7f7f9;
+  border-radius: 8px;
+
+  /* Body / 3 - Bolder */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+
+  /* Neutrals/N700 */
+
+  color: #253858;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.separator {
+  height: 1px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  /* Neutrals/N40 */
+
+  background: #dfe1e6;
 }
