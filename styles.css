@@ -847,3 +847,72 @@ button:focus {
   align-items: center;
   padding: 21px 0 8px 0;
 }
+
+.frame-4 {
+  /* Frame 4 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 12px;
+  gap: 10px;
+
+  /* Body / 3 - Bolder */
+}
+
+.frame-4 a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+
+  /* Neutrals/N600 */
+
+  color: #344563;
+}
+
+.item-navigation {
+  /* Item Navigation */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+  margin-right: 155px;
+  padding: 0;
+  gap: 8px;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-button-placeholder {
+    display: none;
+  }
+
+  .mobile-logo-placeholder {
+    margin-left: 155px;
+  }
+
+  nav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home-shape {
+    display: none;
+  }
+
+  .item-navigation {
+    display: none;
+  }
+}
