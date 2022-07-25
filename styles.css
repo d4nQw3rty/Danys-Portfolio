@@ -168,7 +168,7 @@ nav {
   order: 3;
 }
 
-.grid-box {
+.grid-mobile {
   display: grid;
   gap: 88px;
   grid-area: 1 / 1 / 2 / 2;
@@ -1046,6 +1046,226 @@ button:focus {
   flex-grow: 0;
 }
 
+#desktop-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 142px;
+  padding: 142px 142px;
+}
+
+.desktop-card-container {
+  display: flex;
+  flex-direction: row;
+  padding: 24px 24px;
+  gap: 22px;
+
+  /* Neutrals/N0 */
+
+  background: #fff;
+
+  /* Neutrals/N40 */
+
+  border: 1px solid #dfe1e6;
+  border-radius: 24px;
+}
+
+.desktop-card-img {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.desktop-block {
+  /* Left Block */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 22px;
+}
+
+.desktop-card-primary-text-container {
+  /* Primary Text */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 20px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.desktop-card-project-title {
+  /* Header / 2 */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  margin: 0;
+
+  /* or 130% */
+
+  /* Theme 1 / Neutrals 1 */
+
+  color: #091e42;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.desktop-frame-2 {
+  /* Frame 2 */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 8px 0 8px 0;
+  margin: 0;
+  gap: 12px;
+  list-style: none;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.desktop-frame-2-text {
+  /* Text */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+
+  /* identical to box height, or 133% */
+
+  /* Theme 1 / Neutrals 3 */
+
+  color: #344563;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.desktop-card-paragraph {
+  /* Body / 2 */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+
+  /* or 150% */
+
+  /* Neutrals/N600 */
+
+  color: #344563;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.desktop-tags {
+  /* Tags */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  gap: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.desktop-tags li {
+  /* Tag */
+
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 12px;
+
+  /* Primary/B50 */
+
+  background: #ebebff;
+  border-radius: 8px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+
+  /* Button / Small */
+
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+
+  /* identical to box height, or 133% */
+
+  letter-spacing: 0.03em;
+
+  /* Primary/B400 */
+
+  color: #6070ff;
+}
+
+.desktop-action {
+  /* Inside auto layout */
+  display: flex;
+  flex-direction: row;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+  padding-top: 16px;
+}
+
 @media screen and (min-width: 768px) {
   .mobile-button-placeholder {
     display: none;
@@ -1065,10 +1285,18 @@ button:focus {
   #mobile-bg {
     display: none;
   }
+
+  .grid-mobile {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
   #desktop-header {
+    display: none;
+  }
+
+  #desktop-grid {
     display: none;
   }
 
