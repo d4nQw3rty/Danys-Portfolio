@@ -1,27 +1,23 @@
 
-
 #mobile {
   display: flex;
   flex-direction: column;
   left: 0;
   top: 0;
   background: #f7f7f9;
-  
 }
 
 .overlay {
-  position: fixed;  
+  position: fixed;
   top: 0;
   left: 0;
-  top: 0px;
-  bottom: 0px;
+  bottom: 0;
   width: 100%;
-  height: 100%;  
+  height: 100%;
   backdrop-filter: blur(8px);
-  background: #6070FF;
+  background: #6070ff;
   z-index: 1;
   mix-blend-mode: multiply;
-   
 }
 
 .overlay-bar {
@@ -30,12 +26,11 @@
   display: flex;
   align-items: flex-start;
   justify-content: end;
-
-left: 0px;
-right: 15px;
-top: 8px;
-bottom: 0px;
-margin-right: 24px;
+  left: 0;
+  right: 15px;
+  top: 8px;
+  bottom: 0;
+  margin-right: 24px;
 }
 
 .overlay-bar img {
@@ -57,28 +52,43 @@ margin-right: 24px;
 }
 
 .overlay-list li {
-  
   height: 40px;
   left: 16px;
 }
 
+.frame-4 a {
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+
+  /* Neutrals/N600 */
+
+  color: #344563;
+}
+
 .overlay-list li a {
   text-decoration: none;
-/* Theme 1 / H3 */
 
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 32px;
-line-height: 44px;
-/* or 138% */
+  /* Theme 1 / H3 */
 
-display: flex;
-align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
 
-/* Theme 1 / Neutrals 11 */
+  /* or 138% */
 
-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+
+  /* Theme 1 / Neutrals 11 */
+
+  color: #fff;
 }
 
 .overlay-home-shape {
@@ -90,7 +100,6 @@ color: #FFFFFF;
   padding: 21px 0 8px 0;
 }
 
-
 #mobile-header {
   display: flex;
   flex-direction: column;
@@ -98,7 +107,6 @@ color: #FFFFFF;
   top: 0;
   background: white;
   border-bottom-left-radius: 100px;
-  
 }
 
 nav {
@@ -124,7 +132,7 @@ nav {
   align-items: flex-start;
   padding: 8px;
   margin-right: 36px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 #mobile-bg {
@@ -949,20 +957,6 @@ button:focus {
   /* Body / 3 - Bolder */
 }
 
-.frame-4 a {
-  font-family: 'Poppins', sans-serif;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  text-align: center;
-
-  /* Neutrals/N600 */
-
-  color: #344563;
-}
-
 .item-navigation {
   /* Item Navigation */
 
@@ -1773,7 +1767,7 @@ border-radius: 2px */
     display: none;
   }
 
-  .overlay{
+  .overlay {
     display: none;
   }
 }
