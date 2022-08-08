@@ -1,5 +1,5 @@
-const openMenu = document.getElementsById('openMenu');
-const closeMenu = document.getElementsByClassName('closeMenu');
+const openMenu = document.getElementById('open-menu');
+const closeMenu = document.getElementsByClassName('close-menu')[0];
 function showOverlay() {
   document.getElementById('overlay').style.display = 'block';
 }
